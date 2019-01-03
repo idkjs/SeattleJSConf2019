@@ -1,0 +1,36 @@
+{
+  "homepage": "https://github.com/fiberjw/reason-expo.git",
+  "author": "Juwan Wheatley",
+  "bugs": "https://github.com/fiberjw/reason-expo/issues",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "eject": "expo eject",
+    "build": "bsb -make-world -clean-world",
+    "watch": "bsb -make-world -clean-world -w",
+    "postinstall": "yarn build"
+  },
+  "devDependencies": {
+    "babel-preset-expo": "^5.0.0",
+    "react-test-renderer": "16.7.0"
+  },
+  "dependencies": {
+    "apollo-client": "^2.4.8",
+    "graphql-tag": "^2.10.0",
+    "moment": "^2.23.0",
+    "react-apollo": "^2.3.3",
+    "react-navigation": "^3.0.9",
+    "redux": "^4.0.1",
+    "redux-offline": "^2.0.0",
+    "bs-platform": "^4.0.7",
+    "bs-react-native": "^0.10.0",
+    "expo": "^31.0.2",
+    "react": "16.5.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
+    "reason-expo": "^31.1.0",
+    "reason-react": "^0.5.3"
+  },
+  "private": true
+}

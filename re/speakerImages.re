@@ -1,0 +1,64 @@
+open BsReactNative;
+
+let component = ReasonReact.statelessComponent("SpeakerImages");
+
+let styles =
+  StyleSheet.create(
+    Style.(
+      {
+        "speakerWrapper":
+          style([
+            flex(0.),
+            flexDirection(Row),
+            justifyContent(Center),
+            alignItems(Center),
+            padding(Pt(10.))
+          ]),
+        "speakerImage":
+          style([
+            height(Pt(75.)),
+            width(Pt(75.)),
+            borderRadius(37.5),
+            borderWidth(4.),
+            borderColor(String("rgba(255,255,255,0.5)"))
+          ])
+      }
+    )
+  );
+
+let make = (~talk as {Item.speakers}, _children) => {
+  ...component,
+  render: (_self) =>
+    <View style=styles##speakerWrapper>
+      {
+        let speakerLength = Array.length(speakers);
+        Array.mapi(
+          (i, {Item.name, photo}) =>
+            <Image
+              key=name
+              source=(
+                `URI(
+                  Image.(
+                    imageURISource(
+                      ~uri=
+                        "https://images.graph.cool/v1/cj5cm0t4pnljk01087tv4g61a/"
+                        ++ photo
+                        ++ "/150x150",
+                      ()
+                    )
+                  )
+                )
+              )
+              style=Style.(
+                      concat([
+                        styles##speakerImage,
+                        style([speakerLength > 1 && i === 0 ? left(Pt(25.)) : opacity(Float(1.))])
+                      ])
+                    )
+            />,
+          speakers
+        )
+        |> ReasonReact.array
+      }
+    </View>
+};
