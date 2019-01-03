@@ -103,8 +103,8 @@ let make = (_, _children) => {
         <MapView initialRegion style=styles##mapview>
           <MapView.Marker
             title="Fremont Foundry"
-            image=(Utils.switchPlatform(Packager.require("../../../assets/pin.png"),
-                Packager.require("../../../assets/pin_small.png"))
+            image=(Utils.switchPlatform(Packager.require("../../../static/pin.png"),
+                Packager.require("../../../static/pin_small.png"))
             )
             coordinate
           />
@@ -120,7 +120,7 @@ let make = (_, _children) => {
             value="SeattleJS's inaugural annual conference will be located at the beautiful and unique Fremont Foundry, located at 154 North 35th Street, Seattle, WA 98103."
           />
           <Image
-            source=(`Required(Packager.require("../../../assets/foundry.jpg")))
+            source=(`Required(Packager.require("../../../static/foundry.jpg")))
             style=styles##foundry
             resizeMode=`cover
           />

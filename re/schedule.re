@@ -387,7 +387,7 @@ let make = (~data: Item.data, _children) => {
               )
               contentContainerStyle=styles##contentContainer>
               <Image
-                source={`Required(Packager.require("../../../assets/banner.png"))}
+                source={`Required(Packager.require("../../../static/banner.png"))}
                 style=styles##banner
                 resizeMode=`cover
               />
