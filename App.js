@@ -1,11 +1,7 @@
 import React from "react";
-import { View, Text } from "react-native";
-// import ApolloClient, { createNetworkInterface } from "apollo-client";
+import { View } from "react-native";
 import { ApolloProvider } from "react-apollo";
 import { Font } from "expo";
-// import { compose, createStore, combineReducers, applyMiddleware } from "redux";
-// import { offline } from "redux-offline";
-// import config from "redux-offline/lib/defaults";
 import ApolloClient from "apollo-boost";
 
 // import Rehydrate from "./Rehydrate";
@@ -18,40 +14,6 @@ console.ignoredYellowBox = [
 const client = new ApolloClient({
   uri: "https://api.graph.cool/simple/v1/cj5cm0t4pnljk01087tv4g61a"
 });
-// const networkInterface = createNetworkInterface({
-//   uri: `https://api.graph.cool/simple/v1/cj5cm0t4pnljk01087tv4g61a`
-// });
-
-// const client = new ApolloClient({
-//   networkInterface
-// });
-
-// const store = createStore(
-//   combineReducers({
-//     apollo: client.reducer(),
-//     rehydrate: (state = false, action) => {
-//       switch (action.type) {
-//         case "REHYDRATE_STORE":
-//           return true;
-//         default:
-//           return state;
-//       }
-//     }
-//   }),
-//   undefined,
-//   compose(
-//     applyMiddleware(client.middleware()),
-//     offline({
-//       ...config,
-//       persistCallback: () => {
-//         store.dispatch({ type: "REHYDRATE_STORE" });
-//       },
-//       persistOptions: {
-//         blacklist: ["rehydrate"]
-//       }
-//     })
-//   )
-// );
 
 export default class App extends React.Component {
   state = {

@@ -9,8 +9,7 @@
     "ios": "expo start --ios",
     "eject": "expo eject",
     "build": "bsb -make-world -clean-world",
-    "watch": "bsb -make-world -clean-world -w",
-    "postinstall": "yarn build"
+    "watch": "bsb -make-world -clean-world -w"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0",
@@ -28,6 +27,7 @@
     "react-apollo": "^2.3.3",
     "react-native": "https://github.com/expo/react-native/archive/sdk-31.0.0.tar.gz",
     "react-navigation": "^1.0.0-beta.17",
+    "react-redux": "^5.0.2",
     "reason-expo": "^31.1.0",
     "reason-react": "^0.5.3"
   },

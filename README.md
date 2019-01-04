@@ -7,16 +7,12 @@
 - Scan the barcode with Expo
 - Get down witcho bad self
 
-## Get the app
+## Open in Expo
 
-App Store:
+<https://exp.host/@idkjs/SeattleJSConf2019>
 
-https://itunes.apple.com/us/app/seattlejs/id1266855314?ls=1&mt=8
+## Todo
 
-Play Store:
+- Update offline rendering code. Works with @kenwheeler's original redux caching as seen in the offline branch in this repo. I need to figure out how to do it with the updated ApolloClient.
 
-https://play.google.com/store/apps/details?id=com.kenwheeler.seattlejs&hl=en
-
-Expo:
-
-https://expo.io/@thekenwheeler/seattle-js
+- Deploying App, see <https://docs.expo.io/versions/v31.0.0/distribution/app-stores>
