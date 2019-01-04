@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "SeattleJSConf",
-    "description": "A basic ReasonExpo app.",
-    "slug": "SeattleJSConf",
+    "name": "SeattleJSConf2019",
+    "description": "SeattleJSConf updated to ReasonReact@0.5.3.",
+    "slug": "SeattleJSConf2019",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": [
